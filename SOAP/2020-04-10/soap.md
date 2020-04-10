@@ -1,13 +1,13 @@
 # SOA - Service-Oriented Architecture
 
-<img src="https://github.com/shnonomura/diarioProgramacao/blob/master/SOAP/2020-04-10/soap.jpg">
+<img src="https://github.com/shnonomura/diarioProgramacao/blob/master/SOAP/2020-04-10/soap.png">
 
 **SOAP (Simple Object Access Protocol, em português Protocolo Simples de Acesso a Objetos)** _é um protocolo_ para troca de informações estruturadas em uma _plataforma descentralizada e distribuída_. É um dos padrões para o desenvolvimento de web services ( há tanmbém, o REST ou RESTFull).
 
 Para seu formato de mensagem utiliza-se do XML (Extensible Markup Language).
 
 Na camada de aplicação do modelo OSI, utiliza-se dos protocolos RPC e HTTP para negociação e transmissão de mensagens, respectivamente.
-<img src="https://github.com/shnonomura/diarioProgramacao/blob/master/SOAP/2020-04-10/web_service_soap.jpg">
+<img src="https://github.com/shnonomura/diarioProgramacao/blob/master/SOAP/2020-04-10/web_service_soap.JPG">
 
 _Web Services SOAP em Java - 2ª Edição: Guia prático para o desenvolvimento - Autor : Daniel Adorno Gomes_
 
