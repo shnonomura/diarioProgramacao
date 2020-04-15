@@ -13,3 +13,6 @@
 - **0011 - 2020-04-11** - [Android - Activity](https://github.com/shnonomura/diarioProgramacao/blob/master/Android/2020-04-12%20-%20activity.md)
 - **0012 - 2020-04-11** - [Android - Thread](https://github.com/shnonomura/diarioProgramacao/blob/master/Android/2020-04-11%20-%20thread.md)
 - **0013 - 2020-04-12** - [WEB Services](https://github.com/shnonomura/diarioProgramacao/blob/master/Web%20Service/2020-04-12%20-%20web%20services.md)
+- **0014 - 2020-04-13** - 
+- **0015 - 2020-04-14** -
+- **0016 - 2020-04-15** - [Persistência](https://github.com/shnonomura/diarioProgramacao/blob/master/Dados/2020-04-15%20-%20persistencia%20de%20dados.md)
