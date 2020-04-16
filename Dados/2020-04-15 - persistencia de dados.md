@@ -1,4 +1,4 @@
-# Banco de dados - Persistência de dados
+# Dados - Persistência de dados
 
 "Segundo o artigo da Wikipedia: [O que é persistência de dados?](https://pt.stackoverflow.com/questions/140411/o-que-%C3%A9-persist%C3%AAncia-de-dados)
 
