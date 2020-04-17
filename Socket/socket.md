@@ -2,6 +2,7 @@
 
 <image src="https://github.com/shnonomura/diarioProgramacao/blob/master/Socket/Socket.jpg">
 
+_figura 1 -  sockets - https://www.treinaweb.com.br/blog/uma-introducao-a-tcp-udp-e-sockets/
 
 A Java API para WebSocket é que fornece suporte para criação de aplicações WebSocket.
 WebSocket é um protocolo de aplicação que fornece comunicação full-duplex (recebe e  envia dados) entre dois pontos através do protocolo TCP.
@@ -44,5 +45,9 @@ O esquema *ws* representa um conexão não encriptada e o esquema *wss* represen
 	
 O componente _path_ indica a localização do nó do servidor. O componente _query_ é opcional.
 
+
+
+<image src=""https://github.com/shnonomura/diarioProgramacao/blob/master/Socket/Portos.jpg">
+_figura 2 - portos dos nós - https://www.treinaweb.com.br/blog/uma-introducao-a-tcp-udp-e-sockets_
 
 _fonte: 18 Java API for WebSocket - Java Documentation - https://docs.oracle.com/javaee/7/tutorial/websocket.htm#GKJIQ5_
