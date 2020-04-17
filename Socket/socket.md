@@ -2,7 +2,7 @@
 
 <image src="https://github.com/shnonomura/diarioProgramacao/blob/master/Socket/Socket.jpg">
 
-_figura 1 -  sockets - https://www.treinaweb.com.br/blog/uma-introducao-a-tcp-udp-e-sockets/
+_figura 1 -  sockets - https://www.treinaweb.com.br/blog/uma-introducao-a-tcp-udp-e-sockets_
 
 A Java API para WebSocket é que fornece suporte para criação de aplicações WebSocket.
 WebSocket é um protocolo de aplicação que fornece comunicação full-duplex (recebe e  envia dados) entre dois pontos através do protocolo TCP.
