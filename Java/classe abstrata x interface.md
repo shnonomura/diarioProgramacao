@@ -8,7 +8,9 @@ O Java suporta coleções de métodos relacionados que normalmente permitem info
 Como as interfaces, de certa forma, determinam, definem, estabelecem _O QUE FAZER_ elas padronizam como as coisas, pessoas e sistemas podem interagir entre si por meio de MÉTODOS .
 
 ```
-Uma interface deve ser utilizada quando *NÃO há campo, nem método padrão a implementar*. O Java permite que *classes NÃO RELACIONADAS* implementem um _conjunto de métodos comuns_. Ex.: permite , calcular pagamentos devidos a funcionários e faturas em um único aplicativo, polimorficamente.
+  Uma interface deve ser utilizada quando *NÃO há campo, nem método padrão a implementar*. O Java permite que *classes NÃO RELACIONADAS* 
+  implementem um _conjunto de métodos comuns_. Ex.: permite , calcular pagamentos devidos a funcionários e faturas em um único aplicativo,
+  polimorficamente.
 ```
 
 <image src="https://github.com/shnonomura/diarioProgramacao/blob/master/Java/java-interfaces.jpg">
