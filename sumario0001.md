@@ -16,3 +16,10 @@
 - **0014 - 2020-04-13** - 
 - **0015 - 2020-04-14** -
 - **0016 - 2020-04-15** - [Persistência](https://github.com/shnonomura/diarioProgramacao/blob/master/Dados/2020-04-15%20-%20persistencia%20de%20dados.md)
+- **0017 - 2020-04-16** -
+- **0018 - 2020-04-17** -
+- **0019 - 2020-04-18** -
+- **0020 - 2020-04-19** -
+- **0021 - 2020-04-20** -
+- **0022 - 2020-04-21** -
+- **0023 - 2020-04-22** - [JAX-WS](https://github.com/shnonomura/diarioProgramacao/blob/master/Java/jax-ws.md)
