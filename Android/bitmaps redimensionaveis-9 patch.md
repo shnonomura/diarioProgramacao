@@ -40,7 +40,7 @@ Observe que os atributos layout_width e layout_height são definidos como wrap_c
 
 A Figura 2 mostra os dois botões renderizados a partir do XML e da imagem do NinePatch mostrada acima. Observe como a largura e a altura do botão variam de acordo com o texto, e a imagem de plano de fundo é esticada para acomodá-lo. 
 
-<img src="Imagem" alt="de botões pequenos e de tamanho normal">
+<img src="https://github.com/shnonomura/diarioProgramacao/blob/master/Android/botao%20renderizado%20por%20meio%20de%20um%20recurso%20XML%20e%20de%20um%20grafico%20NinePatch.jpg" alt="de botões pequenos e de tamanho normal">
 
 <small>_Figura 2: botões renderizados por meio de um recurso XML e de um gráfico NinePatch._</small>
 
