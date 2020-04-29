@@ -1,6 +1,6 @@
 # Índice 0001
 
-- **0001 - 2020-04-02** - ativar crlf
+- **0001 - 2020-04-02** - 
 - **0002 - 2020-04-03**
 - **0003 - 2020-04-04**
 - **0004 - 2020-04-05** - [JSON e Banco de Dados NoSQL](a definir)
@@ -24,6 +24,9 @@
 - **0022 - 2020-04-21** -
 - **0023 - 2020-04-22** - [JAX-WS](https://github.com/shnonomura/diarioProgramacao/blob/master/Java/jax-ws.md)
 - **0024 - 2020-04-23** -
-- **0024 - 2020-04-24** -
-- **0024 - 2020-04-25** -
-- **0024 - 2020-04-26** - [Android - RecyclerView ](https://github.com/shnonomura/diarioProgramacao/blob/master/Android/RecylcerView.md)
+- **0025 - 2020-04-24** -
+- **0026 - 2020-04-25** -
+- **0027 - 2020-04-26** - [Android - RecyclerView](https://github.com/shnonomura/diarioProgramacao/blob/master/Android/recyclerView.md)
+- **0028 - 2020-04-27** -
+- **0029 - 2020-04-28** -
+- **0030 - 2020-04-29** - [Android - Resource Manager - Gerencia os recursos do UI do app]()
