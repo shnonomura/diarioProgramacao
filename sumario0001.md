@@ -28,5 +28,6 @@
 - **0026 - 2020-04-25** -
 - **0027 - 2020-04-26** - [Android - RecyclerView](https://github.com/shnonomura/diarioProgramacao/blob/master/Android/recyclerView.md)
 - **0028 - 2020-04-27** -
-- **0029 - 2020-04-28** -
-- **0030 - 2020-04-29** - [Android - Resource Manager - Gerencia os recursos do UI do app]()
+- **0029 - 2020-04-28** - [Android - Bitmap redimensionáveis - 9 patch](https://github.com/shnonomura/diarioProgramacao/blob/master/Android/bitmaps%20redimensionaveis-9%20patch.md)
+- **0030 - 2020-04-29** - [Android - Resource Manager - Gerencia os recursos do UI do app](https://github.com/shnonomura/diarioProgramacao/blob/master/Android/resource_manager.md)
+- **0031 - 2020-05-02** - [Android - AsyncTask](https://github.com/shnonomura/diarioProgramacao/blob/master/Android/asynctask.md)
