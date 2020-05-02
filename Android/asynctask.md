@@ -1,7 +1,7 @@
 # Android - AsyncTask
 
-<small style="color:rgb(61, 52, 255);">fonte: https://developer.android.com/guide/background#challenges_in_background_processing - acessado em 2020-05-02.</small>
-<br><small style="color:rgb(61, 52, 255);">      documentação do classe AsyncTask disponível no Android Studio</small>
+<div><small style="color:rgb(61, 52, 255);">fonte: https://developer.android.com/guide/background#challenges_in_background_processing - acessado em 2020-05-02.</small>
+<br><small style="color:rgb(61, 52, 255);">      documentação do classe AsyncTask disponível no Android Studio</small></div>
 
 Cada app para Android tem uma linha de execução principal encarregada de gerenciar a IU, coordenar interações de usuários e receber eventos de ciclo de vida. Se houver muito trabalho nessa linha de execução, o app poderá travar ou ficar mais lento, levando a uma experiência de usuário indesejável. Qualquer cálculo e operação de longa duração, como decodificar bitmaps, acessar o disco ou executar solicitações de rede, precisa ser feito em uma linha de execução separada em segundo plano. Em geral, tudo que leve mais do que alguns milissegundos precisa ser delegado a uma linha de execução em segundo plano. Pode ser necessário que algumas tarefas sejam realizadas enquanto o usuário interage ativamente com o app. Para saber como executar tarefas em linhas de execução em segundo plano e fora da linha de execução de IU principal ()enquanto o app está sendo usado ativamente
 
@@ -13,9 +13,9 @@ do que isso é recomendado usar as várias API fornecidas pelo pacote java.util.
 Uma AsyncTask é executada em background e seu resultado é publicado na UI Thread que controla as views da activity (tela). 
 A definição de uma AsyncTask é feita por meio de 3 tipos genéricos de tarefas:
 
-	- Params
-	- Progress
-	- Result
+	*- Params*
+	*- Progress*
+	*- Result*
 	
 E quatro passos/métodos:
 
@@ -110,12 +110,11 @@ de _isCancelled_ periodicamente a partir de _doInBackground(Object)_, se possív
 
 Há algumas poucas regras que devem ser seguidas para a Classe AsyncTask trabalhar propriamente:
 
-	- A classe AsyncTask deve ser carregada a **partir a da UI Thread**. Isto é feito automaticamente a partir versão
-	_JELLY_BEAN_.
+	- A classe AsyncTask deve ser carregada a **partir a da UI Thread**. Isto é feito automaticamente a partir
+	versão _JELLY_BEAN_.
 	- A instância da AsyncTask deve ser criada sob a UI Thread.
 	- o método execute() deve ser invocado pela UI Thread.
 	- **Não chamar** os métodos _onPreExecute, onPostExecute, doInBackground e onProgressUpdate_ **manualmente**.
-
 
 
 <h2>Threading rules</h2>
