@@ -13,7 +13,7 @@ do que isso é recomendado usar as várias API fornecidas pelo pacote java.util.
 Uma AsyncTask é executada em background e seu resultado é publicado na UI Thread que controla as views da activity (tela). 
 A definição de uma AsyncTask é feita por meio de 3 tipos genéricos de tarefas:
 
-	*- Params*
+	**- Params**
 	*- Progress*
 	*- Result*
 	
