@@ -131,10 +131,12 @@ AsyncTask garante que todas as chamadas callback estejam sincronizadas para asse
 
 > Os efeitos da memória correspondentes ao método onPreExecute() e tudo mais executado antes da chamada para o método execute(),
 incluindo a construção do objeto AsyncTask, são visíveis ao método doInBackground().
+
 > Os efeitos da memória correspondentes ao método doInBackground() que precede a chamada ao método publishProgress(),
 são visíveis à chamada ao método onProgressUpdate(). Mas o método doInBackground() continua a sua execução, e cuidados devem
 ser tomados de forma que atualizações posteriores do método doInBackground() não interfira em uma chamada em progresso do
 método onProgressUpdate().
+
 > Os efeitos da memória que precedem a chamada ao método cancel(), são visíveis após uma chamada ao método isCancelled() que
 retorna _true_ com resultado, ou durante ou após uma chamada para método onCancelled().
 
