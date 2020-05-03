@@ -133,6 +133,7 @@ Há algumas poucas regras que devem ser seguidas para a Classe AsyncTask trabalh
 
 AsyncTask garante que todas as chamadas callback estejam sincronizadas para assegurar conforme segue, sem explicitar sincronizações.
 
+```java
 	* Os efeitos da memória correspondentes ao método onPreExecute() e tudo mais executado antes da chamada para o método execute(),
 	incluindo a construção do objeto AsyncTask, são visíveis ao método doInBackground().
 
@@ -143,6 +144,7 @@ AsyncTask garante que todas as chamadas callback estejam sincronizadas para asse
 
 	* Os efeitos da memória que precedem a chamada ao método cancel(), são visíveis após uma chamada ao método isCancelled() que
 	retorna _true_ com resultado, ou durante ou após uma chamada para método onCancelled().
+```
 
 ## Ordem de execução
 
