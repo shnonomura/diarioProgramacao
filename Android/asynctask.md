@@ -118,22 +118,22 @@ de _isCancelled_ periodicamente a partir de _doInBackground(Object)_, se possív
 
 Há algumas poucas regras que devem ser seguidas para a Classe AsyncTask trabalhar propriamente:
 
-	1. a classe AsyncTask deve ser carregada a **partir a da UI Thread**. Isto é feito automaticamente a partir
-	versão _JELLY_BEAN_.
-	
-	2. a instância da AsyncTask deve ser criada sob a UI Thread.
-	
-	3. o método execute() deve ser invocado pela UI Thread.
-	
-	4. **Não chamar** os métodos _onPreExecute, onPostExecute, doInBackground e onProgressUpdate_ **manualmente**.
-	
-	5. a tarefa só pode ser executada somente uma única vez. Uma exceção será lançada, se for acionada um segunda execução.
+1. a classe AsyncTask deve ser carregada a **partir a da UI Thread**. Isto é feito automaticamente a partir
+versão _JELLY_BEAN_.
+
+2. a instância da AsyncTask deve ser criada sob a UI Thread.
+
+3. o método execute() deve ser invocado pela UI Thread.
+
+4. **Não chamar** os métodos _onPreExecute, onPostExecute, doInBackground e onProgressUpdate_ **manualmente**.
+
+5. a tarefa só pode ser executada somente uma única vez. Uma exceção será lançada, se for acionada um segunda execução.
 
 ## Acompanhamento da memória
 
 AsyncTask garante que todas as chamadas callback estejam sincronizadas para assegurar conforme segue, sem explicitar sincronizações.
 
-```java
+```
 	* Os efeitos da memória correspondentes ao método onPreExecute() e tudo mais executado antes da chamada para o método execute(),
 	incluindo a construção do objeto AsyncTask, são visíveis ao método doInBackground().
 
