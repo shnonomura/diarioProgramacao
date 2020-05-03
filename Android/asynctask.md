@@ -34,6 +34,7 @@ A Subclasse MyAsyncTask (por exemplo) sobrescreverá pelo menos um método _doIn
 
 Segue _um exemplo de uma subclasse gerada_.
 
+```java
 	private class DownloadFilesTask extends AsyncTask <URL, Integer, Long>; {
 		protected Long doInBackground(URL... urls) {
 			int count = urls.length;
@@ -55,6 +56,7 @@ Segue _um exemplo de uma subclasse gerada_.
 			showDialog("Downloaded " + result + " bytes");
 		}
 	}
+```
 
 Um vez criada, a tarefa é executada de forma simples utilizando o seguinte comando:
 
@@ -80,22 +82,22 @@ private class MyTask extends AsyncTask<void, void, void> { ... }
 Quando uma tarefa assíncrona é executada, a tarefa passa por 4 métodos:
 
 ```
-**onPreExecute**  é invocado a UI Thread antes da tarefa ser executada. Este passo é normalmente utilizado para
-configurar a tarefa mostrando uma barra de progresso na interface do usuário, por exemplo.
+	**onPreExecute**  é invocado a UI Thread antes da tarefa ser executada. Este passo é normalmente utilizado para
+	configurar a tarefa mostrando uma barra de progresso na interface do usuário, por exemplo.
 
-**doInBackground** é invocado sob a thread secundária imediatamente após o término da _onPreExecute_. Este passo
-é utilizado para realizar os procedimentos em background e que pode levar um bom tempo. Os parâmetros da tarefa
-assíncrona são passadas para este passo. O resultado da processamento será retornado para este passo que enviará
-para o último passo. Este passo pode utilizar o _publishProgress_ para apresentar uma ou mais unidades do progresso.
-Tais valores são apresentados pela UI Thread no passo _onProgressUpdade_.
+	**doInBackground** é invocado sob a thread secundária imediatamente após o término da _onPreExecute_. Este passo
+	é utilizado para realizar os procedimentos em background e que pode levar um bom tempo. Os parâmetros da tarefa
+	assíncrona são passadas para este passo. O resultado da processamento será retornado para este passo que enviará
+	para o último passo. Este passo pode utilizar o _publishProgress_ para apresentar uma ou mais unidades do progresso.
+	Tais valores são apresentados pela UI Thread no passo _onProgressUpdade_.
 
-**onProgressUpdate** é invocado sob a UI Thread secundária após a chamada à _publishProgress_. A duração da execução 
-é indefinida. Este método é utilizado para mostrar qualquer forma de _progressão_ na interface do usuário enquanto o 
-processamento computational está em execução. Por exemplo, pode ser utilizado para animar uma barra de progresso ou 
-mostrar logs em um campo texto.
+	**onProgressUpdate** é invocado sob a UI Thread secundária após a chamada à _publishProgress_. A duração da execução 
+	é indefinida. Este método é utilizado para mostrar qualquer forma de _progressão_ na interface do usuário enquanto o 
+	processamento computational está em execução. Por exemplo, pode ser utilizado para animar uma barra de progresso ou 
+	mostrar logs em um campo texto.
 
-**onPostExecute** é invocado a UI Thread depois de finalizado o processamento em background. O resultado para este
-método é passado por parâmetro.
+	**onPostExecute** é invocado a UI Thread depois de finalizado o processamento em background. O resultado para este
+	método é passado por parâmetro.
 ```
 
  ## Cancelando a tarefa
