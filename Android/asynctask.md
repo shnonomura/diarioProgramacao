@@ -1,7 +1,8 @@
 # Android - AsyncTask
 
-<p style="color:rgb(61, 52, 255); font-size:10px">fonte1: https://developer.android.com/guide/background#challenges_in_background_processing - acessado em 2020-05-02.</p>
-<p style="color:rgb(61, 52, 255); font-size:10px">fonte2: documentação do classe AsyncTask disponível no Android Studio</p>
+_fonte1: https://developer.android.com/guide/background#challenges_in_background_processing - acessado em 2020-05-02_
+_fonte2: documentação do classe AsyncTask disponível no Android Studio_
+
 Cada app para Android tem uma linha de execução principal encarregada de gerenciar a IU, coordenar interações de usuários e receber eventos de ciclo de vida. Se houver muito trabalho nessa linha de execução, o app poderá travar ou ficar mais lento, levando a uma experiência de usuário indesejável. Qualquer cálculo e operação de longa duração, como decodificar bitmaps, acessar o disco ou executar solicitações de rede, precisa ser feito em uma linha de execução separada em segundo plano. Em geral, tudo que leve mais do que alguns milissegundos precisa ser delegado a uma linha de execução em segundo plano. Pode ser necessário que algumas tarefas sejam realizadas enquanto o usuário interage ativamente com o app. Para saber como executar tarefas em linhas de execução em segundo plano e fora da linha de execução de IU principal ()enquanto o app está sendo usado ativamente
 
 A *classe AsyncTask* possibilita um meio fácil de controlar a UI Thread. Ela permite executar operações em background e apresentar os resultados na UI Threadsem ter que manipular threads e/ou handlers.
@@ -12,9 +13,9 @@ do que isso é recomendado usar as várias API fornecidas pelo pacote java.util.
 Uma AsyncTask é executada em background e seu resultado é publicado na UI Thread que controla as views da activity (tela). 
 A definição de uma AsyncTask é feita por meio de 3 tipos genéricos de tarefas:
 
-	<div><b>- Params</b>
-	<b>- Progress</b>
-	<b>- Result</b></div>
+	- Params
+	- Progress
+	- Result
 	
 E quatro passos/métodos:
 
@@ -65,9 +66,9 @@ Um vez criada, a tarefa é executada de forma simples utilizando o seguinte coma
  
 Os três tipos de tarefas assíncronas utilizadas são as seguintes:
 
-	**Params**, os tipos de parâmetros a serem enviados para a tarefas
-	**Progress**, os tipos de unidades a ser apresentada que indicam o andamento da tarefa em execução.
-	**Result**, os tipos de resultados esperados.
+	***Params***, os tipos de parâmetros a serem enviados para a tarefas
+	***Progress***, os tipos de unidades a ser apresentada que indicam o andamento da tarefa em execução.
+	***Result***, os tipos de resultados esperados.
 
 Nem todos os tipos são sempre utilizados pelas tarefas assíncronas. Para definir os tipos que não serão utilizados,
 basta utilizar o tipo _void_.
@@ -77,22 +78,22 @@ private class MyTask extends AsyncTask<void, void, void> { ... }
 ## Os 4 métodos
 Quando uma tarefa assíncrona é executada, a tarefa passa por 4 métodos:
 
-	**onPreExecute**  é invocado a UI Thread antes da tarefa ser executada. Este passo é normalmente utilizado para
-	configurar a tarefa mostrando uma barra de progresso na interface do usuário, por exemplo.
-	
-	**doInBackground** é invocado sob a thread secundária imediatamente após o término da _onPreExecute_. Este passo
-	é utilizado para realizar os procedimentos em background e que pode levar um bom tempo. Os parâmetros da tarefa
-	assíncrona são passadas para este passo. O resultado da processamento será retornado para este passo que enviará
-	para o último passo. Este passo pode utilizar o _publishProgress_ para apresentar uma ou mais unidades do progresso.
-	Tais valores são apresentados pela UI Thread no passo _onProgressUpdade_.
-	
-	**onProgressUpdate** é invocado sob a UI Thread secundária após a chamada à _publishProgress_. A duração da execução 
-	é indefinida. Este método é utilizado para mostrar qualquer forma de _progressão_ na interface do usuário enquanto o 
-	processamento computational está em execução. Por exemplo, pode ser utilizado para animar uma barra de progresso ou 
-	mostrar logs em um campo texto.
-	
-	**onPostExecute** é invocado a UI Thread depois de finalizado o processamento em background. O resultado para este
-	método é passado por parâmetro.
+***onPreExecute***  é invocado a UI Thread antes da tarefa ser executada. Este passo é normalmente utilizado para
+configurar a tarefa mostrando uma barra de progresso na interface do usuário, por exemplo.
+
+***doInBackground*** é invocado sob a thread secundária imediatamente após o término da _onPreExecute_. Este passo
+é utilizado para realizar os procedimentos em background e que pode levar um bom tempo. Os parâmetros da tarefa
+assíncrona são passadas para este passo. O resultado da processamento será retornado para este passo que enviará
+para o último passo. Este passo pode utilizar o _publishProgress_ para apresentar uma ou mais unidades do progresso.
+Tais valores são apresentados pela UI Thread no passo _onProgressUpdade_.
+
+***onProgressUpdate*** é invocado sob a UI Thread secundária após a chamada à _publishProgress_. A duração da execução 
+é indefinida. Este método é utilizado para mostrar qualquer forma de _progressão_ na interface do usuário enquanto o 
+processamento computational está em execução. Por exemplo, pode ser utilizado para animar uma barra de progresso ou 
+mostrar logs em um campo texto.
+
+***onPostExecute*** é invocado a UI Thread depois de finalizado o processamento em background. O resultado para este
+método é passado por parâmetro.
 	
  ## Cancelando a tarefa
 
@@ -109,44 +110,28 @@ de _isCancelled_ periodicamente a partir de _doInBackground(Object)_, se possív
 
 Há algumas poucas regras que devem ser seguidas para a Classe AsyncTask trabalhar propriamente:
 
-	- A classe AsyncTask deve ser carregada a **partir a da UI Thread**. Isto é feito automaticamente a partir
+	- a classe AsyncTask deve ser carregada a **partir a da UI Thread**. Isto é feito automaticamente a partir
 	versão _JELLY_BEAN_.
-	- A instância da AsyncTask deve ser criada sob a UI Thread.
+	- a instância da AsyncTask deve ser criada sob a UI Thread.
 	- o método execute() deve ser invocado pela UI Thread.
 	- **Não chamar** os métodos _onPreExecute, onPostExecute, doInBackground e onProgressUpdate_ **manualmente**.
+	- a tarefa só pode ser executada somente uma única vez. Uma exceção será lançada, se for acionada um segunda execução.
 
+## Acompanhamento da memória
 
-<h2>Threading rules</h2>
-<p>There are a few threading rules that must be followed for this class to--
-work properly:</p>
-<ul>
-    <li>The AsyncTask class must be loaded on the UI Thread. This is done
-    automatically as of {@link android.os.Build.VERSION_CODES#JELLY_BEAN}.</li>
-    <li>The task instance must be created on the UI Thread.</li>
-    <li>{@link #execute} must be invoked on the UI Thread.</li>
-    <li>Do not call {@link #onPreExecute()}, {@link #onPostExecute},
-    {@link #doInBackground}, {@link #onProgressUpdate} manually.</li>
-    <li>The task can be executed only once (an exception will be thrown if
-    a second execution is attempted.)</li>
-</ul>
-<h2>Memory observability</h2>
-<p>AsyncTask guarantees that all callback calls are synchronized to ensure the following
-without explicit synchronizations.</p>
-<ul>
-    <li>The memory effects of {@link #onPreExecute}, and anything else
-    executed before the call to {@link #execute}, including the construction
-    of the AsyncTask object, are visible to {@link #doInBackground}.
-    <li>The memory effects of {@link #doInBackground} are visible to
-    {@link #onPostExecute}.
-    <li>Any memory effects of {@link #doInBackground} preceding a call
-    to {@link #publishProgress} are visible to the corresponding
-    {@link #onProgressUpdate} call. (But {@link #doInBackground} continues to
-    run, and care needs to be taken that later updates in {@link #doInBackground}
-    do not interfere with an in-progress {@link #onProgressUpdate} call.)
-    <li>Any memory effects preceding a call to {@link #cancel} are visible
-    after a call to {@link #isCancelled} that returns true as a result, or
-    during and after a resulting call to {@link #onCancelled}.
-</ul>
+AsyncTask garante que todas as chamadas callback estejam sincronizadas para assegurar conforme segue, sem explicitar sincronizações.
+
+	- Os efeitos da memória correspondentes ao método onPreExecute() e tudo mais executado antes da chamada para o método execute(),
+	incluindo a construção do objeto AsyncTask, são visíveis ao método doInBackground().
+	- Os efeitos da memória correspondentes ao método doInBackground() que precede a chamada ao método publishProgress(),
+	são visíveis à chamada ao método onProgressUpdate(). Mas o método doInBackground() continua a sua execução, e cuidados devem
+	ser tomados de forma que atualizações posteriores do método doInBackground() não interfira em uma chamada em progresso do
+	método onProgressUpdate().
+	- Os efeitos da memória que precedem a chamada ao método cancel(), são visíveis após uma chamada ao método isCancelled() que
+	retorna _true_ com resultado, ou durante ou após uma chamada para método onCancelled().
+
+## Ordem de execução
+
 <h2>Order of execution</h2>
 <p>When first introduced, AsyncTasks were executed serially on a single background
 thread. Starting with {@link android.os.Build.VERSION_CODES#DONUT}, this was changed
