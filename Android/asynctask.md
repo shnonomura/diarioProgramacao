@@ -12,9 +12,9 @@ A **classe AsyncTask** possibilita um meio fácil de controlar a UI Thread. Ela 
 Uma AsyncTask é executada em background e seu resultado é publicado na UI Thread que controla as views da activity (tela). 
 A definição de uma AsyncTask é feita por meio de 3 tipos genéricos de tarefas:
 ```
-- <em><strong>Params</strong></em>
-- <em><strong>Progress</strong></em>
-- <em><strong>Result</strong></em>
+- Params
+- Progress
+- Result
 ```	
 E quatro passos/métodos:
 ```
@@ -137,16 +137,15 @@ AsyncTask garante que todas as chamadas callback estejam sincronizadas para asse
 
 ## Ordem de execução
 
-<h2>Order of execution</h2>
-<p>When first introduced, AsyncTasks were executed serially on a single background
-thread. Starting with {@link android.os.Build.VERSION_CODES#DONUT}, this was changed
-to a pool of threads allowing multiple tasks to operate in parallel. Starting with
-{@link android.os.Build.VERSION_CODES#HONEYCOMB}, tasks are executed on a single
-thread to avoid common application errors caused by parallel execution.</p>
-<p>If you truly want parallel execution, you can invoke
-{@link #executeOnExecutor(java.util.concurrent.Executor, Object[])} with
-{@link #THREAD_POOL_EXECUTOR}.</p>
- 
+As AsyncTasks eram executadas de forma serial sob o controle de uma simples thread em background.
+Na versão Donut, foi alterado permitindo múltiplas tarefas serem executadas em paralelo.
+Com a HoneyComb, as tarefas passaram a ser executadas sob o controle de uma simples thread para evitar todos erros comuns de aplicações
+causados pela execução em paralelo.
+
+Se o desenvolvedor deseja realmente a execução em paralelo, deve-se utilizar o método executeOnExecutor (java.util.concurrent.Executor)
+com  a THREAD_POOL_EXECUTOR.
+
+```java 
 public abstract class AsyncTask<Params, Progress, Result> {
     private static final String LOG_TAG = "AsyncTask";
 
@@ -173,3 +172,4 @@ public abstract class AsyncTask<Params, Progress, Result> {
     };
 
 }
+```
