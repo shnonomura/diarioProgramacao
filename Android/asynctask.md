@@ -1,7 +1,7 @@
 # Android - AsyncTask
 
-<div style="color:rgb(61, 52, 255); font-size:10dp">fonte1: https://developer.android.com/guide/background#challenges_in_background_processing - acessado em 2020-05-02.
-<br>fonte2: documentação do classe AsyncTask disponível no Android Studio</div>
+<p style="color:rgb(61, 52, 255); font-size:10px">fonte1: https://developer.android.com/guide/background#challenges_in_background_processing - acessado em 2020-05-02.
+<br>fonte2: documentação do classe AsyncTask disponível no Android Studio</p>
 Cada app para Android tem uma linha de execução principal encarregada de gerenciar a IU, coordenar interações de usuários e receber eventos de ciclo de vida. Se houver muito trabalho nessa linha de execução, o app poderá travar ou ficar mais lento, levando a uma experiência de usuário indesejável. Qualquer cálculo e operação de longa duração, como decodificar bitmaps, acessar o disco ou executar solicitações de rede, precisa ser feito em uma linha de execução separada em segundo plano. Em geral, tudo que leve mais do que alguns milissegundos precisa ser delegado a uma linha de execução em segundo plano. Pode ser necessário que algumas tarefas sejam realizadas enquanto o usuário interage ativamente com o app. Para saber como executar tarefas em linhas de execução em segundo plano e fora da linha de execução de IU principal ()enquanto o app está sendo usado ativamente
 
 A *classe AsyncTask* possibilita um meio fácil de controlar a UI Thread. Ela permite executar operações em background e apresentar os resultados na UI Threadsem ter que manipular threads e/ou handlers.
