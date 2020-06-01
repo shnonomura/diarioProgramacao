@@ -3,7 +3,7 @@
 Cada aplicativo em execução corresponde um processo. E cada processo posso ter várias linhas de execução, ou seja, várias threads.
 As threads são subsistemas dentro de um processo que executam uma ou mais tarefas. E cada uma das Thread trabalha de forma independente.
 
-<image src="https://github.com/shnonomura/diarioProgramacao/blob/master/imagem/Android/processo_e_thread.jpg">
+<image src="https://github.com/shnonomura/diarioProgramacao/blob/master/imagem/processo_e_thread.jpg">
 
 _fonte: Curso Desenvolvimento Android Completo 2020 - Crie 18 Apps - Jamilton Damasceno_
 
@@ -11,7 +11,7 @@ _fonte: Curso Desenvolvimento Android Completo 2020 - Crie 18 Apps - Jamilton Da
 
 Pode-se enviar códigos diretamente para a UI Thread, mas tem que se ter o cuidado de não sobrecarregar a UI Thread haja visto que provocar o travamento/interrupção do processo ou aplicativo. Para que isso não ocorra, o desenvolvedor deve criar sua própria Thread. Se a UI thread for bloqueada por mais de 5 segundos aproximadamente, o usuário receberá a mensagem  "application not responding" (ANR). E o usuário poderá decidir abandonar sua aplicação ou pior decidir desinstalá-lo.
 
-<image src="https://github.com/shnonomura/diarioProgramacao/blob/master/imagem/Android/UI_Thread.jpg">
+<image src="https://github.com/shnonomura/diarioProgramacao/blob/master/imagem/UI_Thread.jpg">
 
 _fonte: Curso Desenvolvimento Android Completo 2020 - Crie 18 Apps - Jamilton Damasceno_
 
@@ -29,13 +29,13 @@ As funções da UI Thread são:
 	. broadcast receivers
 	. services
 	
-<image src="https://github.com/shnonomura/diarioProgramacao/blob/master/imagem/Android/funcoes_da_UI_Thread.jpg">
+<image src="https://github.com/shnonomura/diarioProgramacao/blob/master/imagem/funcoes_da_UI_Thread.jpg">
 
 _fonte: Curso Desenvolvimento Android Completo 2020 - Crie 18 Apps - Jamilton Damasceno_
 
 A criação de uma thread pode ser feita: extendendo a classe Thread ou utilizando a interface runnable.
  
-<image src="https://github.com/shnonomura/diarioProgramacao/blob/master/imagem/Android/como_criar_uma_Thread.jpg">
+<image src="https://github.com/shnonomura/diarioProgramacao/blob/master/imagem/como_criar_uma_Thread.jpg">
 
 _fonte: Curso Desenvolvimento Android Completo 2020 - Crie 18 Apps - Jamilton Damasceno_
 

@@ -4,7 +4,7 @@ fonte: https://developer.android.com/guide/components/activities/activity-lifecy
 
 O sistema elimina processos quando precisa liberar RAM. A probabilidade de o sistema eliminar um determinado processo depende do estado do processo no momento. O estado do processo, por sua vez, depende do estado da atividade em execução no processo. A tabela 1 mostra a correlação entre o estado do processo, o estado da atividade e a probabilidade de o sistema eliminar o processo. 
 
-<image src="https://github.com/shnonomura/diarioProgramacao/blob/master/imagem/Android/ciclo%20de%20vida%20e%20estado%20da%20atividade.JPG">
+<image src="https://github.com/shnonomura/diarioProgramacao/blob/master/imagem/ciclo%20de%20vida%20e%20estado%20da%20atividade.JPG">
 
 O sistema nunca elimina uma atividade diretamente para liberar memória. Em vez disso, ele elimina o processo em que a atividade opera, destruindo não só a atividade, mas também todo o restante em execução no processo. Para saber como preservar e restaurar os estados da IU da atividade quando ocorre o processo de eliminação iniciado pelo sistema, consulte Como salvar e restaurar o estado da atividade.
 

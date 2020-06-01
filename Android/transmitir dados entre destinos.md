@@ -27,4 +27,4 @@ Veja que o argumento foi adicionado em XML. Clique na guia Text para alternar pa
 
 A biblioteca Navigation é compatível com os seguintes tipos de argumento:
 
-<image src="https://github.com/shnonomura/diarioProgramacao/blob/master/imagem/Android/tipos de argumentos.jpg">
+<image src="https://github.com/shnonomura/diarioProgramacao/blob/master/imagem/tipos de argumentos.jpg">
