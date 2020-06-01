@@ -1,6 +1,6 @@
 # Sockets
 
-<image src="https://github.com/shnonomura/diarioProgramacao/blob/master/imagem/Socket/Socket.jpg">
+<image src="https://github.com/shnonomura/diarioProgramacao/blob/master/imagem/Socket.jpg">
 
 _figura 1 -  sockets - https://www.treinaweb.com.br/blog/uma-introducao-a-tcp-udp-e-sockets_
 
@@ -45,7 +45,8 @@ O esquema *ws* representa um conexão não encriptada e o esquema *wss* represen
 	
 O componente _path_ indica a localização do nó do servidor. O componente _query_ é opcional.
 
-<image src="https://github.com/shnonomura/diarioProgramacao/blob/master/imagem/Socket/Portos.jpg">
+<image src="https://github.com/shnonomura/diarioProgramacao/blob/master/imagem/Portos.jpg">
+
 _figura 2 - portos dos nós - https://www.treinaweb.com.br/blog/uma-introducao-a-tcp-udp-e-sockets_
 
 _fonte: 18 Java API for WebSocket - Java Documentation - https://docs.oracle.com/javaee/7/tutorial/websocket.htm#GKJIQ5_
