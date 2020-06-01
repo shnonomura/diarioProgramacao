@@ -9,7 +9,7 @@ atividade que mostra a lista de novos emails, outra atividade para criar um emai
 
 Embora as activity em nosso aplicativo trabalhe em conjunto de forma coesa, **cada activity é independente uma da outra**. Isto possibilita nosso aplicativo iniciar uma atividade em outro aplicativo, bem como, permite que outros aplicativos inicie uma _activity_ em nosso aplicativo (claro, se o aplicativo permitir)_. Por exemplo, uma aplicativo de mensagens poderia iniciar uma activity no aplicativo câmera para tirar uma foto e depois iniciar uma activity no aplicativo de email de forma a compartilhar a imagem via email.
 
-<image src="https://github.com/shnonomura/diarioProgramacao/blob/master/Android/activities%20em%20acao.JPG">
+<image src="https://github.com/shnonomura/diarioProgramacao/blob/master/imagem/Android/activities%20em%20acao.JPG">
 
 Geralmente, uma _activity_ em uma aplicativo é especificado como a 'main' activity (MainActivity). O usuário visualiza a _MainActivity_ quando é iniciado o aplicativo pela primeira vez. Cada _activity_ pode startar outras _activity_ para exeutar diferentes ações.
 

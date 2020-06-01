@@ -9,9 +9,9 @@
 - **0007 - 2020-04-08** - [SOA - Service-Oriented Architecture](https://github.com/shnonomura/diarioProgramacao/blob/master/SOA/2020-04-08%20-%20soa_intro.md)
 - **0008 - 2020-04-09** - [AJAX - Asyncronous Javascript and XML](https://github.com/shnonomura/diarioProgramacao/blob/master/AJAX/2020-04-09%20-%20ajax.ypynb)
 - **0009 - 2020-04-10** - [SOAP - Simple Object Access Protocol](https://github.com/shnonomura/diarioProgramacao/blob/master/SOAP/2020-04-10%20-%20soap.md)
-- **0010 - 2020-04-10** - [Android - Adapters](https://github.com/shnonomura/diarioProgramacao/blob/master/Android/2020-04-10%20-%20adapters.md)
-- **0011 - 2020-04-11** - [Android - Activity](https://github.com/shnonomura/diarioProgramacao/blob/master/Android/2020-04-12%20-%20activity.md)
-- **0012 - 2020-04-11** - [Android - Thread](https://github.com/shnonomura/diarioProgramacao/blob/master/Android/2020-04-11%20-%20thread.md)
+- **0010 - 2020-04-10** - [Android - Adapters](https://github.com/shnonomura/diarioProgramacao/blob/master/Android/adapters.md)
+- **0011 - 2020-04-11** - [Android - Activity](https://github.com/shnonomura/diarioProgramacao/blob/master/Android/activity.md)
+- **0012 - 2020-04-11** - [Android - Thread](https://github.com/shnonomura/diarioProgramacao/blob/master/Android/thread.md)
 - **0013 - 2020-04-12** - [WEB Services](https://github.com/shnonomura/diarioProgramacao/blob/master/Web%20Service/2020-04-12%20-%20web%20services.md)
 - **0014 - 2020-04-13** - 
 - **0015 - 2020-04-14** -
@@ -25,9 +25,9 @@
 - **0023 - 2020-04-22** - [JAX-WS](https://github.com/shnonomura/diarioProgramacao/blob/master/Java/jax-ws.md)
 - **0024 - 2020-04-23** -
 - **0025 - 2020-04-24** -
-- **0026 - 2020-04-25** -
+- **0026 - 2020-04-25** - [Sockets](https://github.com/shnonomura/diarioProgramacao/blob/master/Socket/socket.md)
 - **0027 - 2020-04-26** - [Android - RecyclerView](https://github.com/shnonomura/diarioProgramacao/blob/master/Android/recyclerView.md)
-- **0028 - 2020-04-27** -
+- **0028 - 2020-04-27** - [Android - Transmitir dados entre destinos][https://github.com/shnonomura/diarioProgramacao/blob/master/Android/transmitir dados entre destinos.md]
 - **0029 - 2020-04-28** - [Android - Bitmap redimensionáveis - 9 patch](https://github.com/shnonomura/diarioProgramacao/blob/master/Android/bitmaps%20redimensionaveis-9%20patch.md)
 - **0030 - 2020-04-29** - [Android - Resource Manager - Gerencia os recursos do UI do app](https://github.com/shnonomura/diarioProgramacao/blob/master/Android/resource_manager.md)
 - **0031 - 2020-05-02** - [Android - AsyncTask](https://github.com/shnonomura/diarioProgramacao/blob/master/Android/asynctask.md)
