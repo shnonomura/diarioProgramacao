@@ -6,5 +6,5 @@ Um objeto Adapter age como uma ponte de ligação entre um AdapterView e dados v
 
 Uma AdapterView é uma view cuja os filhos são determinados por um Adapter.
 
-<img src="https://github.com/shnonomura/diarioProgramacao/blob/master/imagem/using%20an%20ArrayAdapter%20with%20ListView.jpg">
+<img src="https://github.com/shnonomura/diarioProgramacao/blob/master/imagem/using%20ArrayAdapter%20with%20ListView.jpg">
 
