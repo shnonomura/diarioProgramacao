@@ -34,20 +34,20 @@ Para testar os pacotes que você criar, será necessário instalar estes 2 pacot
 
 	install.packages('testthat')
 	install.packages('devtools')
-	
-Você  pode  criar  seus  pacotes  R  usando  apenas  o  RStudio. 
+
+Você  pode  criar  seus  pacotes  R  usando  apenas  o  RStudio.
 Entretanto, dependendo dos recursos que serão usados no seu pacote,
-você precisa instalar as ferramentas de desenvolvimento para pacotes 
+você precisa instalar as ferramentas de desenvolvimento para pacotes
 R, de acordo com seu sistema operacional:
 
 **Windows**
-	
-Baixar o Rtools: 
-	
+
+Baixar o Rtools:
+
 	https://cran.rstudio.com/bin/windows/Rtools
-	
-Baixar o LaTeX: 
-	
+
+Baixar o LaTeX:
+
 	http://miktex.org/download
 
 ## expressoes regulares - encontra um padrao dentro de um vetor e permite substituicao
@@ -59,27 +59,27 @@ Baixar o LaTeX:
 - regexpr(pattern, text, ignore.case = FALSE, perl = FALSE, fixed = FALSE, useBytes = FALSE)
 - gregexpr(pattern, text, ignore.case = FALSE, perl = FALSE, fixed = FALSE, useBytes = FALSE)
 
-str <- c("Expressões", "regulares", "em linguagem R", 
+str <- c("Expressões", "regulares", "em linguagem R",
          "permitem a busca de padrões", "e exploração de textos",
          "podemos buscar padrões em dígitos",
          "como por exemplo",
          "10992451280")
-	 
+
 ### c é um vetor de strings
-str <- c("Expressões", "regulares", "em linguagem R", 
+str <- c("Expressões", "regulares", "em linguagem R",
          "permitem a busca de padrões", "e exploração de textos",
          "podemos buscar padrões em dígitos",
          "como por exemplo",
          "10992451280")
 
  - encontra o padrao "ex" dentro de str e retorna a posição.
- 
+
 	grep("ex",str,value=F)
 
 - encontra o padrão "ex" dentro de str e retorna a strings
 
 	grep("ex",str,value=F)
-	
+
 - encontra a posição onde há digitos (\\d) dentro str
 
 	grep("\\d", str , value = F)
@@ -87,11 +87,11 @@ str <- c("Expressões", "regulares", "em linguagem R",
 - encontra a posição onde há digitos (\\d) dentro str e retorna a string
 
 	grep("\\d", str , value = T)
-	
+
 - retorna true ou false quando pesquisa o vetor character. Retorna true, a posição que tem dígito. O mais, indica inclusive outro caractere.
 
 	grepl("\\d+", str)
-	
+
 - retorna true, a posição que NÃO tem dígito. O mais, indica inclusive outro caractere.
 
 	grepl("\\D+", str)
@@ -124,16 +124,16 @@ str2 <- c("2678 é maior que 45 - @??!§$" , "Vamos escrever 14 scripts R")
 - gsub("\\D","",str2)
 
 	[1] "267845" "14"   
- 
+
 - gsub("\\s","",str2)
 
-	[1] "2678émaiorque45-@??!§$" 
+	[1] "2678émaiorque45-@??!§$"
 	[2] "Vamosescrever14scriptsR"
 
 - gsub("[iot]","Q",str2)
 
 	[1] "2678 é maQQr que 45 - @??!§$"
-	[2] "VamQs escrever 14 scrQpQs R" 
+	[2] "VamQs escrever 14 scrQpQs R"
 
 - gsub("[[:punct:]]","", str2)
 
@@ -217,7 +217,7 @@ mydates = dts
 ## POSIXct
 Armazena os segundos desde uma data específica, convertendo os valores numéricos (que podem representar horas, minutos ou segundos) desde 01 de Janeiro de 1970
 
-## POSIXt é a classe principal e POSIXct e POSIXlt são subclasses. 
+## POSIXt é a classe principal e POSIXct e POSIXlt são subclasses.
 Poderíamos usar aqui apenas POSIXct, que é a subclasse (mas não podemos usar apenas a classe principal)
 class(mydates) = c('POSIXt','POSIXct')
 mydates
@@ -242,8 +242,8 @@ difftime(b2, b1, units = 'weeks')
 install.packages("lubridate")
 require(lubridate)
 
-ymd("20180604") 
-mdy("06-04-2018") 
+ymd("20180604")
+mdy("06-04-2018")
 dmy("04/06/2018")
 
 chegada <- ymd_hms("2016-06-04 12:00:00", tz = "Pacific/Auckland")
@@ -276,22 +276,23 @@ tm1.dechr <- hour(tm1.lub) + minute(tm1.lub)/60 + second(tm1.lub)/3600
 tm1.dechr
 force_tz(tm1.lub, "Pacific/Auckland")
 
-
 ## Gerando um dataframe de datas
-sono <- data.frame(bed.time = ymd_hms("2013-09-01 23:05:24", "2013-09-02 22:51:09", 
+sono <- data.frame(bed.time = ymd_hms("2013-09-01 23:05:24", "2013-09-02 22:51:09",
                                        "2013-09-04 00:09:16", "2013-09-04 23:43:31",
-				       "2013-09-06 00:17:41", "2013-09-06 22:42:27", 
-                                       "2013-09-08 00:22:27"), rise.time = ymd_hms("2013-09-02 08:03:29", "2013-09-03 07:34:21", 
+				       "2013-09-06 00:17:41", "2013-09-06 22:42:27",
+                                       "2013-09-08 00:22:27"), rise.time = ymd_hms("2013-09-02 08:03:29", "2013-09-03 07:34:21",
                                                                                    "2013-09-04 07:45:06", "2013-09-05 07:07:17", "2013-09-06 08:17:13", "2013-09-07 06:52:11", 
                                                                                    "2013-09-08 07:15:19"), sleep.time = dhours(c(6.74, 7.92, 7.01, 6.23, 6.34, 7.42, 6.45)))
 sono
 sono$eficiencia <- round(sono$sleep.time/(sono$rise.time - sono$bed.time) * 100, 1)
 sono
 
-## Gerando um plot a partir de datas
+## Gerando um plot a partir de datas  - ksjflsdfjl
 
 par(mar = c(5, 4, 4, 4))
+
 plot(round_date(sono$rise.time, "day"), sono$eficiencia, type = "o", col = "blue", xlab = "Manhã", ylab = NA)
+
 par(new = TRUE)
 plot(round_date(sono$rise.time, "day"), sono$sleep.time/3600, type = "o", col = "red", axes = FALSE, ylab = NA, xlab = NA)
 axis(side = 4)
