@@ -221,8 +221,11 @@ Armazena os segundos desde uma data específica, convertendo os valores numéric
 
 ## POSIXt é a classe principal e POSIXct e POSIXlt são subclasses.
 Poderíamos usar aqui apenas POSIXct, que é a subclasse (mas não podemos usar apenas a classe principal)
+
 class(mydates) = c('POSIXt','POSIXct')
+
 mydates
+
 class(mydates)
 
 mydates = structure(dts, class = c('POSIXt','POSIXct'))
@@ -249,16 +252,23 @@ mdy("06-04-2018")
 dmy("04/06/2018")
 
 chegada <- ymd_hms("2016-06-04 12:00:00", tz = "Pacific/Auckland")
+
 partida <- ymd_hms("2011-08-10 14:00:00", tz = "Pacific/Auckland")
 
 chegada
+
 partida
 
 second(chegada)
+
 second(chegada) <- 23
+
 chegada
+
 wday(chegada)
+
 wday(chegada, label = TRUE)
+
 class(chegada)
 
 ## Cria um objeto que especifica a data de início e data de fim
