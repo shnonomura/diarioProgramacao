@@ -211,7 +211,9 @@ data_de_hoje - my_time
 O vetor de números pode representar o número de dias, horas ou minutos (de acordo com o que você quer converter)
 A Linguagem R considera o ponto de início a data de 01 de Janeiro de 1970 e contabiliza o total
 de horas, minutos ou segundos, aquilo que o vetor numérico representar
+
 dts = c(1127056501,1104295502,1129233601,1113547501,1119826801,1132519502,1125298801,1113289201)
+
 mydates = dts
 
 ## POSIXct
@@ -285,8 +287,11 @@ sono <- data.frame(bed.time = ymd_hms("2013-09-01 23:05:24", "2013-09-02 22:51:0
                                        "2013-09-08 00:22:27"), rise.time = ymd_hms("2013-09-02 08:03:29", "2013-09-03 07:34:21",
                                                                                    "2013-09-04 07:45:06", "2013-09-05 07:07:17", "2013-09-06 08:17:13", "2013-09-07 06:52:11",
                                                                                    "2013-09-08 07:15:19"), sleep.time = dhours(c(6.74, 7.92, 7.01, 6.23, 6.34, 7.42, 6.45)))
+
 sono
+
 sono$eficiencia <- round(sono$sleep.time/(sono$rise.time - sono$bed.time) * 100, 1)
+
 sono
 
 ## Gerando um plot a partir de datas
@@ -296,7 +301,11 @@ par(mar = c(5, 4, 4, 4))
 plot(round_date(sono$rise.time, "day"), sono$eficiencia, type = "o", col = "blue", xlab = "Manhã", ylab = NA)
 
 par(new = TRUE)
+
 plot(round_date(sono$rise.time, "day"), sono$sleep.time/3600, type = "o", col = "red", axes = FALSE, ylab = NA, xlab = NA)
+
 axis(side = 4)
+
 mtext(side = 4, line = 2.5, col = "red", "Duração do Sono")
+
 mtext(side = 2, line = 2.5, col = "blue", "Eficiência do Sono")
