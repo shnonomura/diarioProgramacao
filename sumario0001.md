@@ -24,7 +24,7 @@
 - **0022 - 2020-04-21** -
 - **0023 - 2020-04-22** - [JAX-WS](https://github.com/shnonomura/diarioProgramacao/blob/master/Java/jax-ws.md)
 - **0024 - 2020-04-23** -
-- **0025 - 2020-04-24** -
+- **0025 - 2020-04-24** - [Linguagem R](https://github.com/shnonomura/diarioProgramacao/blob/master/R/3-Linguagem%20R-fatores-estruturas%20de%20controle%20e%20funcoes.md)
 - **0026 - 2020-04-25** - [Sockets](https://github.com/shnonomura/diarioProgramacao/blob/master/Socket/socket.md)
 - **0027 - 2020-04-26** - [Android - RecyclerView](https://github.com/shnonomura/diarioProgramacao/blob/master/Android/recyclerView.md)
 - **0028 - 2020-04-27** - [Android - Transmitir dados entre destinos](https://github.com/shnonomura/diarioProgramacao/blob/master/Android/transmitir dados entre destinos.md)
@@ -32,3 +32,4 @@
 - **0030 - 2020-04-29** - [Android - Resource Manager - Gerencia os recursos do UI do app](https://github.com/shnonomura/diarioProgramacao/blob/master/Android/resource_manager.md)
 - **0031 - 2020-05-02** - [Android - AsyncTask](https://github.com/shnonomura/diarioProgramacao/blob/master/Android/asynctask.md)
 - **0032 - 2020-05-07** - [Firebase - aulas](https://github.com/shnonomura/diarioProgramacao/blob/master/Firebase/Firebase.md)
+
