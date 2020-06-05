@@ -288,7 +288,6 @@ sono
 sono$eficiencia <- round(sono$sleep.time/(sono$rise.time - sono$bed.time) * 100, 1)
 sono
 
-
 ## Gerando um plot a partir de datas
 par(mar = c(5, 4, 4, 4))
 plot(round_date(sono$rise.time, "day"), sono$eficiencia, type = "o", col = "blue", xlab = "Manhã", ylab = NA)
