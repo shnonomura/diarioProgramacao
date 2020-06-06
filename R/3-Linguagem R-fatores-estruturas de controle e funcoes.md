@@ -178,7 +178,7 @@ Armazenados como número de segundos desde 1 de Janeiro de 1970
 ## Formatando a saída - as.Date()
 as.Date("2018-06-28")
 as.Date("Jun-28-18", format = "%b-%d-%y")
-as.Date("28 June, 2018", format = "%d %B, %Y")
+as.Date("28 Jun, 2018", format = "%d %B, %Y")
 
 
 ## Função format()
