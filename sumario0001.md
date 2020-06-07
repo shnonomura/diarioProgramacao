@@ -19,11 +19,11 @@
 - **0017 - 2020-04-16** -
 - **0018 - 2020-04-17** -
 - **0019 - 2020-04-18** -
-- **0020 - 2020-04-19** -
-- **0021 - 2020-04-20** - [Java-Interface](https://github.com/shnonomura/diarioProgramacao/blob/master/Java/interfaces.md)
-- **0022 - 2020-04-21** - [Java-Factory Pattern](https://github.com/shnonomura/diarioProgramacao/blob/master/Java/factory_pattern.md)
-- **0023 - 2020-04-22** - [JAX-WS](https://github.com/shnonomura/diarioProgramacao/blob/master/Java/jax-ws.md)
-- **0024 - 2020-04-23** - [Java-Design Patterns](https://github.com/shnonomura/diarioProgramacao/blob/master/Java/design patterns Java.md)
+- **0020 - 2020-04-19** - 
+- **0021 - 2020-04-20** - [Java-Interface](https://github.com/shnonomura/diarioProgramacao/blob/master/JAVA/interfaces.md)
+- **0022 - 2020-04-21** - [Java-Factory Pattern](https://github.com/shnonomura/diarioProgramacao/blob/master/JAVA/factory_pattern.md)
+- **0023 - 2020-04-22** - [JAX-WS](https://github.com/shnonomura/diarioProgramacao/blob/master/JAVA/jax-ws.md)
+- **0024 - 2020-04-23** - [Java-Design Patterns](https://github.com/shnonomura/diarioProgramacao/blob/master/JAVA/design patterns Java.md)
 - **0025 - 2020-04-24** - [Linguagem R](https://github.com/shnonomura/diarioProgramacao/blob/master/R/3-Linguagem%20R-fatores-estruturas%20de%20controle%20e%20funcoes.md)
 - **0026 - 2020-04-25** - [Sockets](https://github.com/shnonomura/diarioProgramacao/blob/master/Socket/socket.md)
 - **0027 - 2020-04-26** - [Android - RecyclerView](https://github.com/shnonomura/diarioProgramacao/blob/master/Android/recyclerView.md)
