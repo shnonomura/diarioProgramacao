@@ -4,15 +4,15 @@ fonte:  https://www.tutorialspoint.com/design_pattern/factory_pattern.htm
 
 ## Resumo - factory Pattern
 
-	É um padrão-tipo de criação. Uma das melhores para criação de um objeto.
+**É um padrão-tipo de criação. Uma das melhores para criação de um objeto.**
 
 	
 	1. criar a public interface com as métodos abstract e constantes.
 	2. criar as classes concretas que implementam a interface e que @override
 	   os métodos da interface executando o que deseja.
 	3. criar a classe factory que declarará os métodos de criação dos objetos-interface conforme os vários tipos.
-	4. a classe principal instanciará objetos da classe factory e pelo métodos declarados criará o objeto-tipo da classe 
-           concreta desejada que implementa a interface.
+	4. a classe principal instanciará objetos da classe factory e pelo métodos declarados criará o objeto-tipo da
+           classe concreta desejada que implementa a interface.
 	5. e por meio do objeto-tipo da classe concreta criada realizar o método desejado.
 	   
 	obs.: Como interface, TODOS os membros são públicos de forma implícita e NÃO PODEM especificar nenhum detalhe
