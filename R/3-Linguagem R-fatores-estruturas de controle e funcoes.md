@@ -1,3 +1,39 @@
+# criando vetores
+vec1 <- c(1001,1002,1003,1004,1005)
+vec2 <- c(0,1,1,0,2)
+vec3 <- c('verde', 'laranja', 'azul', 'laranja', 'verde')
+
+# by joining the vectors in a data frame
+df <- data.frame(vec1, vec2,vec3)
+df
+
+# verificando que o R categorizou a última coluna como fator
+str(df)
+
+# verificando os níveis do fator. Perceba que os níveis estão categorizados
+levels(df$vec3)
+
+#criando outra coluna e atribuindo labels
+df$cat1 <- factor(df$vec3, labels = c("cor2", "cor1", "cor3"))
+df$cat1
+df
+
+# internamente, os fatores são registrados como inteiros, mas a ordenação
+# segue a ordem alfabética das strings
+str(df)
+
+      veja como foi feita a atribuição Azul = cor2 , Laranja = cor1 , Verde = cor3 , ou seja, os vetores com os labels, 
+      seguiram a ordem alfabética dos níveis classificados pelo R.
+
+# Criando outra coluna e atribuir labels
+# Ao aplicarmos a  função factor() à coluna vec2, internamente R classificou
+# em ordem alfabética e quando atribuímos os labels, foi feita a associação.
+
+df$cat2 <- factor(df$vec2, labels = c("Divorciado", "Casado", "Solteiro"))
+df
+str(df)
+levels(df$cat2)
+
 # 3.Linguagem R - fatores, estruturas de controle e funções
 
 # BigDataAzure/cap10/10-expressoes_regulares.RStudio
@@ -206,6 +242,10 @@ my_time + 1
 data_de_hoje - as.Date(my_time)
 data_de_hoje - my_time
 
+**necessário fazer conversão de datas para mesmo tipo para realizar cálculos**
+
+data_de_hoje - as.Date(my_time)
+
 
 ## Convertendo Data em formato específico
 O vetor de números pode representar o número de dias, horas ou minutos (de acordo com o que você quer converter)
@@ -247,9 +287,12 @@ difftime(b2, b1, units = 'weeks')
 install.packages("lubridate")
 require(lubridate)
 
+**informa uma string e retorna uma date**
 ymd("20180604")
 mdy("06-04-2018")
 dmy("04/06/2018")
+
+
 
 chegada <- ymd_hms("2016-06-04 12:00:00", tz = "Pacific/Auckland")
 

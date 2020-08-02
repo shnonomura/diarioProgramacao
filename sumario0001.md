@@ -19,7 +19,7 @@
 - **0017 - 2020-04-16** -
 - **0018 - 2020-04-17** -
 - **0019 - 2020-04-18** -
-- **0020 - 2020-04-19** - 
+- **0020 - 2020-04-19** - [BI-Fluxo de análise de dados](https://github.com/shnonomura/diarioProgramacao/blob/master/BI/fluxo analise de dados.md)
 - **0021 - 2020-04-20** - [Java-Interface](https://github.com/shnonomura/diarioProgramacao/blob/master/JAVA/interfaces.md)
 - **0022 - 2020-04-21** - [Java-Factory Pattern](https://github.com/shnonomura/diarioProgramacao/blob/master/JAVA/factory_pattern.md)
 - **0023 - 2020-04-22** - [JAX-WS](https://github.com/shnonomura/diarioProgramacao/blob/master/JAVA/jax-ws.md)
