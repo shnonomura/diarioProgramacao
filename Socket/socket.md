@@ -25,7 +25,7 @@ O handshake é compatível com uma estrutura baseada no Http. Os servidores web 
 	Origin: http://localhost
 	Sec-WebSocket-Version: 13
 	
-Um exemplo de handshake a partir do servidor em resposta à requisição do cliente parecesse com:
+Um exemplo de handshake a partir do servidor em resposta à requisição do cliente parece-se com:
 
 	HTTP/1.1 101 Switching Protocols
 	Upgrade: websocket
